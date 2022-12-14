@@ -74,8 +74,8 @@ export class ThemeMenu implements ObMenu {
       name: 'Home',
       path: '/',
       i18n: {
-        cn: '首页',
-        en: 'Home'
+        cn: '',
+        en: ''
       }
     })
   }
@@ -87,6 +87,14 @@ export class ThemeMenu implements ObMenu {
    */
   constructor(raw?: GeneralOptions) {
     const extract: GeneralOptions = {
+      Home: {
+        name: 'Home',
+        path: '/',
+        i18n: {
+          cn: '首页',
+          en: 'Home'
+        }
+      },
       About: {
         name: 'About',
         path: '/about',
