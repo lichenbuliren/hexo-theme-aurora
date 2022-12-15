@@ -47,6 +47,10 @@ export const useMetaStore = defineStore({
      * else use the title string given instead.
      */
     setTitle(title: string): void {
+      if (title === 'home') {
+        this.title = ''
+        return
+      }
       this.title = i18n.global.te(`menu.${title}`)
         ? i18n.global.t(`menu.${title}`)
         : title

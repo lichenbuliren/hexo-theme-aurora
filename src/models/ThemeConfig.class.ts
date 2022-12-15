@@ -74,8 +74,8 @@ export class ThemeMenu implements ObMenu {
       name: 'Home',
       path: '/',
       i18n: {
-        cn: '',
-        en: ''
+        cn: '首页',
+        en: 'Home'
       }
     })
   }
